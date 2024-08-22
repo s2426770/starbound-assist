@@ -1,0 +1,53 @@
+# Python bytecode files  
+__pycache__/  
+*.py[cod]  
+
+# Jupyter Notebook checkpoints  
+.ipynb_checkpoints/  
+
+# Jupyter Notebook output files (can include large outputs)  
+*.ipynb  
+
+# Virtual Environment  
+myenv/  
+**/venv/  
+env/  
+ENV/  
+env.bak/  
+venv.bak/  
+.Python  
+python.env  
+__pycache__/  
+
+# Data files (if you're using specific data files)  
+*.csv  
+*.tsv  
+*.xls  
+*.xlsx  
+*.json  
+*.h5  
+*.hdf5  
+*.pickle  
+
+# Temporary files  
+*.tmp  
+*.temp  
+
+# Logs  
+*.log  
+
+# IDE/editor specific files  
+# VS Code  
+.vscode/  
+*.code-workspace  
+
+# PyCharm  
+.idea/  
+*.iml  
+
+# Operating System files  
+.DS_Store  
+Thumbs.db  
+
+# Environment variables file (if you're using a .env file)  
+.env
