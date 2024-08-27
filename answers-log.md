@@ -1,6 +1,6 @@
-TRICORDER_1
+### TRICORDER_1
 
-======== gpt4o-mini + nomic-embed-text =========
+#### gpt4o-mini + nomic-embed-text =========
 ['Personal_Tricorder', 'Combat', 'Combat', 'Main_Page']
 The features of the Personal Tricorder include:
 
@@ -9,7 +9,7 @@ The features of the Personal Tricorder include:
 3. **Right-click**: Opens the list of Tutorial quests, allowing players to accept quests without visiting NPCs.
 4. **Shift + right-click**: Configures the Matter Manipulator, allowing temporary changes to mining area size, disabling liquid collection, replacing functions with other tools/weapons, and replacing the basic Matter Manipulator with advanced versions.
 
-======== gpt4o-mini + openAI embed =========
+#### gpt4o-mini + openAI embed =========
 ['Personal_Tricorder', 'Personal_Tricorder', 'Personal_Tricorder', 'Personal_Tricorder']
 The features of the Personal Tricorder are:
 
@@ -29,8 +29,8 @@ The features of the Personal Tricorder are:
    - Temporarily replace certain functions with other tools or weapons.
    - Replace the basic Matter Manipulator with an advanced version.
 
-======== gpt4o-mini + bge embed =========
-**********SOURCES**********
+#### gpt4o-mini + bge embed =========
+**********SOURCES********
 ['Personal_Tricorder', 'Personal_Tricorder', 'Personal_Tricorder', 'Main_Page']
 The features of the Personal Tricorder are:
 
@@ -50,7 +50,7 @@ The features of the Personal Tricorder are:
    - Temporarily replace functions of the Matter Manipulator with other tools or weapons.
    - Replace the basic Matter Manipulator with a more advanced version.
 
-======== llama 3.1 8b groq + openai embed ========
+#### llama 3.1 8b groq + openai embed ========
 **********SOURCES**********
 ['Personal_Tricorder', 'Personal_Tricorder', 'Personal_Tricorder', 'Personal_Tricorder']
 The features of the Personal Tricorder are:
@@ -72,38 +72,38 @@ The features of the Personal Tricorder are:
    - Replacing the basic Matter Manipulator with a highly advanced Manipulator (e.g., Morphite Manipulator or Quantum Manipulator).
 
 
-TRICORDER_2
+### TRICORDER_2
 
-==== BGE EMBEDDING ====
+#### ==== BGE EMBEDDING ====
 **********SOURCES**********
 ['Personal_Tricorder', 'Personal_Tricorder', 'Personal_Tricorder', 'Personal_Tricorder']
 
 'You can buy the Personal Tricorder at Lost and Found and some other shops.'
 
-==== OPENAI EMBED ====
+#### ==== OPENAI EMBED ====
 **********SOURCES**********
 ['Personal_Tricorder', 'Personal_Tricorder', 'Personal_Tricorder', 'Personal_Tricorder']
 
 "You can find the Personal Tricorder at the Lost and Found for 44 Pixels, or you can purchase it from Lorewalker's Shop for 200 Pixels, or from Penguin Bay for 44 Pixels. Additionally, it can be crafted at a Tinkering Table using 2 Silicon Boards, 1 Glass, and 1 Tungsten Bar."
 
-===== LLAMA 3.1 8B GROQ + OPENAI EMBED ========
+#### ===== LLAMA 3.1 8B GROQ + OPENAI EMBED ========
 **********SOURCES**********
 ['Personal_Tricorder', 'Personal_Tricorder', 'Personal_Tricorder', 'Personal_Tricorder']
 
 
 
-TRICORDER_3
-==== BGE EMBEDDING ====
+### TRICORDER_3
+#### ==== BGE EMBEDDING ====
 **********SOURCES**********
 ['Personal_Tricorder', 'Personal_Tricorder', 'Personal_Tricorder', 'Personal_Tricorder']
 
 'Yes, you can craft a Personal Tricorder without using pixels. You can obtain it by using a Tinkering Table with the following materials: 2 Silicon Boards, 1 Glass, and 1 Tungsten Bar.'
 
-==== OPENAI EMBED ====
+#### ==== OPENAI EMBED ====
 
 No, you cannot craft a Personal Tricorder without using pixels. You need to use 2 Silicon Boards, 1 Glass, and 1 Tungsten Bar at a Tinkering Table to craft it, along with 44 pixels to buy it from certain shops.'
 
-===== LLAMA 3.1 8B GROQ + OPENAI EMBED ========
+#### ===== LLAMA 3.1 8B GROQ + OPENAI EMBED ========
 **********SOURCES**********
 ['Personal_Tricorder', 'Personal_Tricorder', 'Personal_Tricorder', 'Personal_Tricorder']
 
@@ -111,3 +111,69 @@ No, you cannot craft a Personal Tricorder without using pixels. You need to use 
 
 (OTHER TIMES)
 I don't have that information.
+
+### Llama 3.1-8b-instant + OpenAI embed + llama system prompt + temp=0.5
+tested on question Tri 1,2,3,4
+
+********ANSWER********
+#### Tri 1 : what are the features of the personal tricorder?
+The Personal Tricorder has the following features:
+
+1. **Shift + left-click**: Opens the Research interface, allowing you to unlock recipes to craft new items.
+2. **Left-click**: Opens a menu with:
+   - Information about the player, including bonuses/penalties of the chosen race, resistances to damage types, temporary immunities, etc.
+   - GPS information about the current planet, including weather, gravity, biomes, surface dungeons, etc.
+   - A tool to create mobility Techs like Microsphere or Phase Sprint, and a tool to equip them.
+   - A tool to refuel the Mech.
+   - A tool to replace weapons, thrusters, etc. on the Mech.
+   - A tool to upgrade all weapons/armors (for Upgrade Modules, up to tier 6) and tools (for Manipulator Modules, to the maximum tier that the tool supports).
+   - A Codex reader (more convenient than the usual codex reader in Starbound, and doesn't truncate long pages).
+3. **Right-click**: Opens the list of Tutorial quests, which can be accepted without going to any NPCs. These quests can serve as a guide for new players and offer good rewards.
+4. **Shift + right-click**: Allows you to configure the Matter Manipulator, including:
+   - Temporarily reducing the mining area (e.g., to 3x3 or 2x2) when building delicate houses.
+   - Temporarily disabling the collection of liquids (e.g., to avoid angering the Erchius Ghost).
+   - Temporarily replacing some functions of the Matter Manipulator with other tools or weapons.
+   - Replacing the basic Matter Manipulator with a highly advanced Manipulator (like Morphite Manipulator or Quantum Manipulator).
+
+#### Tri 2 : where can i find this tricorder if i happen to lose it?
+You can find a Personal Tricorder at the following locations:
+
+1. Lorewalker's Shop
+2. Lost and Found
+3. Penguin Bay
+4. Tinkering Table (by crafting it with 2 Silicon Board, 1 Glass, and 1 Tungsten Bar)
+
+It can also be purchased at other shops, but the prices and availability may vary.
+
+
+#### Tri 3 : Can i craft a personal tricorder without having to use my pixels?
+No, the Personal Tricorder cannot be crafted without pixels. The required materials to craft a Personal Tricorder at the Tinkering Table are 2x Silicon Board, 1x Glass, and 1x Tungsten Bar.
+
+
+#### Tri 4 : can you tell me a few things that i can craft (along with its  required crafting amterials) with the tricorder?
+Based on the provided context, here are a few items that can be crafted with the Personal Tricorder:
+
+1. Tech Card (crafted at the Tinkering Table)
+   - No specific crafting materials are mentioned in the context.
+
+2. Research Holodisc (crafted at the Tinkering Table)
+   - No specific crafting materials are mentioned in the context.
+
+3. Unstable Particles (crafted at the Tinkering Table)
+   - No specific crafting materials are mentioned in the context.
+
+2. Research Holodisc (crafted at the Tinkering Table)
+   - No specific crafting materials are mentioned in the context.
+
+3. Unstable Particles (crafted at the Tinkering Table)
+   - No specific crafting materials are mentioned in the context.
+
+4. Magnet Grip II
+   - No specific crafting materials are mentioned in the context.
+
+
+4. Magnet Grip II
+   - 10x Tech Card
+   - 5x Precursor Data Storage
+   - 15x Quantum Fluid
+   - 3x Engraved Device

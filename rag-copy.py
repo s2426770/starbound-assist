@@ -78,8 +78,8 @@ def scrape_jina_ai(url: str) -> str:
   return response.text
 
 # setting up vector store
-if True:
-# if not os.path.exists(persistent_directory):
+# if True:
+if not os.path.exists(persistent_directory):
     print("Persistent directory doesn't exist. Initializing vector store...")
 
     urls = [
@@ -143,14 +143,15 @@ retriever = vectorstore.as_retriever()  # initialize retriever
 def retrieve_and_format(query):
     relevant_docs = retriever.invoke(query)
     print('\n\n**********SOURCES**********')
-    print_docs(relevant_docs)
+    print([doc.metadata.get("id") for doc in relevant_docs])
+    # print_docs(relevant_docs)
     return "\n\n".join([doc.page_content for doc in relevant_docs])
 
 def print_docs(docs):
     i=1
     for doc in docs:
         print(f"---> Doc {i} (Source: {doc.metadata.get("id")}) :\n")
-        # print(doc.page_content[:100])
+        print(doc.page_content[:100])
         i+=1
         
 # model_local = ChatOllama(model="mistral") #c1
@@ -165,7 +166,7 @@ model_local = ChatGroq(
         api_key=os.getenv("GROQ_API_KEY"),
         model="llama-3.1-8b-instant",
         # model="llama-3.1-70b-versatile",o-0
-        temperature=0.5,
+        temperature=0,
         )
 
 # model_local = ChatOllama(
@@ -191,7 +192,23 @@ rag_template = """
                 Context:
                 {context}
                 """
-rag_prompt = ChatPromptTemplate.from_template(rag_template)
+                
+llama_template = """
+                <|begin_of_text|><|start_header_id|>system<|end_header_id|>
+                You are a pedantic but knowledgeable, efficient and direct AI assistant for Frackin' Universe Website. Provide concise answers focusing on key information. Offer tactful suggestions to solve the user's question. 
+                Answer the *question* based only on the following *context*. If the information is not in the *context*, say that you don't have the informmation.
+                Focus on the MAIN contents of the given *context*, ignoring the periphery of the website i.e., navigation bars, headers, footers, social media etc. 
+                It is **CRITICAL** that you thoroughly digest the given *context* to answer the user's *question*.
+                Context: {context}
+                <|eot_id|>
+                <|start_header_id|>user<|end_header_id|>
+                {question}
+                <|eot_id|>
+                <|start_header_id|>assistant<|end_header_id|>
+                """
+                
+# rag_prompt = ChatPromptTemplate.from_template(rag_template)
+rag_prompt = ChatPromptTemplate.from_template(llama_template)
 rag_chain = (
     {"context": RunnableLambda(retrieve_and_format), "question": RunnablePassthrough()}
     | rag_prompt
