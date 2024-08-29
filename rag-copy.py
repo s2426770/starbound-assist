@@ -90,7 +90,8 @@ if not os.path.exists(persistent_directory):
         "https://frackinuniverse.miraheze.org/wiki/Stars",
         "https://frackinuniverse.miraheze.org/wiki/Crafting",
         "https://frackinuniverse.miraheze.org/wiki/Combat",
-        "https://frackinuniverse.miraheze.org/wiki/Weapons"
+        "https://frackinuniverse.miraheze.org/wiki/Weapons",
+        "https://frackinuniverse.miraheze.org/wiki/Planets"
     ]
     # loading urls 
     docs = [WebBaseLoader("https://r.jina.ai/" + url).load() for url in urls] # scrape using langchain

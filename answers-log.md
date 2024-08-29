@@ -112,7 +112,7 @@ No, you cannot craft a Personal Tricorder without using pixels. You need to use 
 (OTHER TIMES)
 I don't have that information.
 
-### Llama 3.1-8b-instant + OpenAI embed + llama system prompt + temp=0.5
+### TEMP=0.5 + Llama 3.1-8b-instant + OpenAI embed + llama system prompt
 tested on question Tri 1,2,3,4
 
 ********ANSWER********
@@ -177,3 +177,82 @@ Based on the provided context, here are a few items that can be crafted with the
    - 5x Precursor Data Storage
    - 15x Quantum Fluid
    - 3x Engraved Device
+
+### TEMP=0 + (groq) Llama 3.1-8b-instant + OpenAI embed + llama system prompt
+
+#### Tri 1
+********ANSWER********
+The features of the Personal Tricorder are:
+
+1. **Shift + left-click**: Opens the Research interface, allowing you to "unlock" recipes to craft new items.
+2. **Left-click**: Opens a menu with:
+   - Information about the player, including bonuses/penalties of the chosen race, resistances to damage types, temporary immunities, etc.
+   - GPS information about the current planet, including weather, gravity, biomes, surface dungeons, etc.
+   - A tool to create mobility Techs like Microsphere or Phase Sprint, and a tool to equip them.
+   - A tool to refuel the player's Mech.
+   - A tool to replace weapons, thrusters, etc. on the player's Mech.
+   - A tool to upgrade all weapons/armors (for Upgrade Modules, up to tier 6) and tools (for Manipulator Modules, to the maximum tier that the tool supports).
+   - A Codex reader (more convenient than the usual codex reader in Starbound, and doesn't truncate long pages).
+3. **Right-click**: Opens the list of Tutorial quests, which can be accepted without going to any NPCs. These quests can serve as a guide for new players and offer rewards.
+4. **Shift + right-click**: Allows the player to configure the Matter Manipulator, including:
+   - Temporarily reducing the mining area (e.g., to 3x3 or 2x2) when building delicate houses.
+   - Temporarily disabling the collection of liquids (e.g., to avoid angering the Erchius Ghost).
+   - Temporarily replacing some functions of the Matter Manipulator with other tools or weapons.
+   - Replacing the basic Matter Manipulator with a highly advanced Manipulator (like Morphite Manipulator or Quantum Manipulator).
+
+#### Tri 2
+**********SOURCES**********
+['Personal_Tricorder', 'Personal_Tricorder', 'Personal_Tricorder', 'Personal_Tricorder']
+You can find the Personal Tricorder at the following locations:
+
+1. Lorewalker's Shop
+2. Lost and Found
+3. Penguin Bay
+4. Tinkering Table (by crafting it with 2x Silicon Board, 1x Glass, and 1x Tungsten Bar)
+
+It can also be purchased at Lost and Found for 44 pixels.
+
+
+#### Tri 3
+**********SOURCES**********
+['Personal_Tricorder', 'Personal_Tricorder', 'Personal_Tricorder', 'Personal_Tricorder']
+No, you cannot craft a Personal Tricorder without using pixels. The required materials for crafting a Personal Tricorder at the Tinkering Table are 2x Silicon Board, 1x Glass, and 1x Tungsten Bar, which do not include pixels.
+
+#### Tri 4
+**********SOURCES**********
+['Personal_Tricorder', 'Personal_Tricorder', 'Personal_Tricorder', 'Personal_Tricorder']
+According to the context, the following items can be crafted with the Personal Tricorder:
+
+1. Tech Card (crafted at Tinkering Table, no specific materials mentioned)
+2. Research Holodisc (crafted at Tinkering Table, no specific materials mentioned)
+3. Unstable Particles (crafted at Tinkering Table, no specific materials mentioned)
+4. Magnet Grip II (crafted at Tinkering Table, requires 10x Tech Card, 5x Precursor Data Storage, 15x Quantum Fluid, and 3x Engraved Device)
+
+
+### BGE + (groq) Llama 3 8b + temp 0.1 + chunk 500,100
+
+
+>>>> SOURCES <<<<< :
+['Personal_Tricorder', 'Personal_Tricorder', 'Personal_Tricorder', 'Personal_Tricorder']
+********ANSWER********
+According to the provided context, the Personal Tricorder has the following features:
+
+1. **Shift + Left-Click**: Opens the Research interface, allowing you to "unlock" recipes to craft new items.
+2. **Left-Click**: Opens a menu with:
+	* Information about the player, including bonuses/penalties of the chosen race, resistances to damage types, temporary immunities, etc.
+	* GPS: information about the current planet, including weather, gravity, biomes, surface dungeons, etc.
+	* Tool to create mobility Techs like Microsphere or Phase Sprint, and tool to equip them.
+	* Tool to refuel your Mech.
+	* Tool to replace weapons, thrusters, etc. on your Mech.
+	* Tool to upgrade all weapons/armors (for Upgrade Modules, up to tier 6) and tools (for Manipulator Modules, to the maximum tier that the tool supports).
+	* Codex reader (more convenient than the usual codex reader in Starbound, and doesn't truncate long pages).
+3. **Right-Click**: Opens the list of Tutorial quests, which can be accepted without going to any NPCs. These quests can serve as a guidance for new players and have some good rewards.
+4. **Shift + Right-Click**: Allows you to configure the Matter Manipulator, enabling you to:
+	* Temporarily reduce the mining area (e.g., from 5x5 to 3x3 or 2x2).
+	* Temporarily disable the collection of liquids (e.g., to avoid angering the Erchius Ghost).
+	* Temporarily replace some functions of the Matter Manipulator with other tools or weapons.
+	* Replace the basic Matter Manipulator with a highly advanced Manipulator (like Morphite Manipulator or Quantum Manipulator).
+
+These are the main features of the Personal Tricorder in Frackin' Universe.
+
+#### tri2
